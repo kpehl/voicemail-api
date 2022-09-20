@@ -1,0 +1,14 @@
+DROP DATABASE IF EXISTS vm_db;
+
+CREATE DATABASE vm_db;
+
+\c vm_db;
+
+CREATE TABLE IF NOT EXISTS voicemails (
+  id SERIAL,
+  transcript TEXT NOT NULL,
+  phone VARCHAR(20),
+  duration INTEGER,
+  date TIMESTAMP DEFAULT NOW(),
+  read BOOLEAN DEFAULT FALSE
+);
