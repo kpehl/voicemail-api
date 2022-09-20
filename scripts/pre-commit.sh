@@ -13,3 +13,6 @@ then
 
   exit 1
 fi
+
+# to view git hooks: ls -a .git/hooks
+# created this as a pre-commit hook: vim .git/hooks/pre-commit 
