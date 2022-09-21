@@ -48,6 +48,7 @@ module.exports = {
         // convert to seconds
         const duration = Math.round(number / 1000);
 
+        // calculate hours, minutes, seconds
         const hours = Math.round(duration / 3600);
         const minutes = Math.round((duration - (hours * 3600)) / 60);
         const seconds = duration - (hours * 3600) - (minutes * 60);

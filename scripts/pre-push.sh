@@ -8,3 +8,6 @@ then
   echo $f
   exit 1
 fi
+
+# to view git hooks: ls -a .git/hooks
+# Creaed as a pre-push git-hook
