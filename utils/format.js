@@ -80,6 +80,7 @@ module.exports = {
         return time;
     },
     formatDate: (date) => {
+        // calculate how many days ago the input date is from today
         const today = new Date().getTime();
         const diff = today - date;
         const days = Math.floor(diff / 1000 / 60 / 60 / 24);

@@ -10,4 +10,5 @@ then
 fi
 
 # to view git hooks: ls -a .git/hooks
-# Creaed as a pre-push git-hook
+# Created as a pre-push git-hook
+# Needed to set as executable: chmod +x .git/hooks/pre-push
