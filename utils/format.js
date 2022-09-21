@@ -15,11 +15,14 @@ const months = [
 
 module.exports = {
     formatText: (text) => {
+        // for text formatted like an email address
         return text.replace(/\w+@\w+\.\w+/, (match) => {
+            // return an html snippet with the mailto anchor
             return `<a href="mailto:${match}">${match}</a>`;
         });
     },
     formatPhone: (num) => {
+        // convert the number to a string
         const number = num.toString();
 
         if (number.length >= 10) {
