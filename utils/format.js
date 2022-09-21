@@ -25,6 +25,7 @@ module.exports = {
         // convert the number to a string
         const number = num.toString();
 
+        // if number is longer than 10 digits, assume phone number and format
         if (number.length >= 10) {
           return number.replace(
             /(\d{1,2})?(\d{3})(\d{3})(\d{4})/, 
