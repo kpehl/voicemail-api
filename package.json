@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "npx eslint . --ext .js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/kpehl/voicemail-api#readme",
   "dependencies": {
     "chai": "^4.3.6",
+    "eslint": "^8.24.0",
     "mocha": "^10.0.0",
     "sinon": "^14.0.0"
   }
